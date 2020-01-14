@@ -4,7 +4,6 @@ body.welcome-page {
 }
 
 .welcome {
-    background-image: $welcomePageBackground;
     display: flex;
     flex-direction: column;
     font-family: $welcomePageFontFamily;
@@ -25,6 +24,10 @@ body.welcome-page {
         overflow: hidden;
         position: relative;
         text-align: center;
+
+        .header-image {
+            margin-top: 100px;
+        }
 
         .header-text {
             display: flex;
@@ -53,6 +56,7 @@ body.welcome-page {
             line-height: $welcomePageHeaderTextDescriptionLineHeight;
             margin-bottom: $welcomePageHeaderTextDescriptionMarginBottom;
             align-self: $welcomePageHeaderTextDescriptionAlignSelf;
+            justify-content: center;
         }
 
         #enter_room {
